@@ -1,4 +1,4 @@
-import { FaUserCircle } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 
 export default function Navbar() {
     return (
@@ -22,21 +22,43 @@ export default function Navbar() {
                         className="menu menu-sm dropdown-content bg-blue text-paleBlue rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a href="#home">Homepage</a></li>
                         <li><a href="#projects">Portfolio</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about-contact">About</a></li>
                     </ul>
                 </div>
             </div>
 
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="text-primary"
+            >
+                <text x="2" y="20" fontSize="20" fontFamily="monospace">{'<'}</text>
+            </svg>
+
             {/* Center logo */}
             <div className="navbar-center">
-                <a href="#home" className="btn btn-ghost normal-case text-xl text-cyan">My Portfolio</a>
+                <a href="#home" className="btn btn-ghost normal-case text-xl text-cyan">ephym6</a>
             </div>
+
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="text-primary"
+            >
+                <text x="2" y="20" fontSize="20" fontFamily="monospace">{'/>'}</text>
+            </svg>
 
             {/* Right profile dropdown */}
             <div className="navbar-end">
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                        <FaUserCircle className="text-3xl text-cyan" />
+                        <FaUser className="text-3xl text-cyan" />
                     </div>
                     <ul
                         tabIndex={0}
