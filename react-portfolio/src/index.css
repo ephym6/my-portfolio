@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, Poppins, sans-serif;
+
+  --color-navy: #03045E;
+  --color-blue: #0077B6;
+  --color-cyan: #00B4D8;
+  --color-lightBlue: #90E0EF;
+  --color-paleBlue: #CAF0F8;
+}
