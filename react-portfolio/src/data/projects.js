@@ -1,5 +1,15 @@
 // My projects
-import {SiJavascript, SiSpringboot, SiHtml5, SiCss3, SiReact, SiVite, SiTailwindcss, SiPython} from "react-icons/si";
+import {
+    SiJavascript,
+    SiSpringboot,
+    SiHtml5,
+    SiCss3,
+    SiReact,
+    SiVite,
+    SiTailwindcss,
+    SiPython,
+    SiMysql
+} from "react-icons/si";
 import MyPortfolio from "../assets/images/projects/my-portfolio.png";
 import VCN from "../assets/images/projects/vcn.png";
 import F4 from "../assets/images/projects/f4.png";
@@ -24,6 +34,7 @@ export const projects = [
         description: "A modern and robust hostel booking and management system built with Spring Boot for students",
         tech: [
             { icon: SiSpringboot, name: "Spring Boot" },
+            { icon: SiMysql, name: "MySQL"},
             { icon: SiJavascript, name: "JavaScript" },
             { icon: SiHtml5, name: "HTML5" },
             { icon: SiCss3, name: "CSS3" }
@@ -36,10 +47,9 @@ export const projects = [
         title: "Vibe Culture Nation (E-commerce Website)",
         description: "An e-commerce website for Vibe Culture Nation, featuring a modern design and user-friendly interface, for showing events, products, and more.",
         tech: [
-            { icon: SiReact, name: "React" },
+            { icon: SiReact, name: "React", libraries: ["heroui"] },
             { icon: SiVite, name: "Vite" },
             { icon: SiTailwindcss, name: "Tailwind CSS" },
-            { icon: "", name: "HeroUI" }
         ],
         image: VCN,
         link: "https://vibe-culture-tau.vercel.app/",
