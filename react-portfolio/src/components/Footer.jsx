@@ -22,12 +22,22 @@ export default function Footer() {
                     fill="currentColor"
                     className="text-primary"
                 >
-                    <text x="2" y="20" fontSize="20" fontFamily="monospace">{'/>'}</text>
+                    <text x="2" y="20" fontSize="20" fontFamily="monospace">{'>'}</text>
                 </svg>
             </aside>
 
             {/* Social */}
             <nav className="flex gap-4">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="text-primary"
+                >
+                    <text x="2" y="20" fontSize="20" fontFamily="monospace">{'</'}</text>
+                </svg>
                 {/* Email */}
                 <a
                     href="mailto:your.email@example.com"
@@ -64,6 +74,16 @@ export default function Footer() {
                         <path d="M19 0h-14C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.758 0 5-2.24 5-5V5c0-2.76-2.242-5-5-5zM7 19H4V9h3v10zM5.5 7.5C4.67 7.5 4 6.83 4 6s.67-1.5 1.5-1.5S7 5.17 7 6s-.67 1.5-1.5 1.5zM20 19h-3v-5.5c0-1.07-.43-1.5-1.25-1.5S14.5 12.43 14.5 13.5V19h-3V9h3v1.08c.4-.58 1.15-1.08 2.25-1.08 1.97 0 3.25 1.28 3.25 3.5V19z" />
                     </svg>
                 </a>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="text-primary"
+                >
+                    <text x="2" y="20" fontSize="20" fontFamily="monospace">{'>'}</text>
+                </svg>
             </nav>
         </footer>
     )
