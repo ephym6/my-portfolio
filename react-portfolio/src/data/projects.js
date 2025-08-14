@@ -1,5 +1,6 @@
 // My projects
 import {SiJavascript, SiSpringboot, SiHtml5, SiCss3, SiReact, SiVite, SiTailwindcss, SiPython} from "react-icons/si";
+import MyPortfolio from "../assets/images/projects/my-portfolio.png";
 
 export const projects = [
     {
@@ -10,7 +11,7 @@ export const projects = [
             { icon: SiVite, name: "Vite" },
             { icon: SiTailwindcss, name: "Tailwind CSS", libraries: ["daisyui"]},
         ],
-        image: "https://via.placeholder.com/300",
+        image: MyPortfolio,
         link: "",
         github: ""
     },
