@@ -3,6 +3,8 @@ import {SiJavascript, SiSpringboot, SiHtml5, SiCss3, SiReact, SiVite, SiTailwind
 import MyPortfolio from "../assets/images/projects/my-portfolio.png";
 import VCN from "../assets/images/projects/vcn.png";
 import F4 from "../assets/images/projects/f4.png";
+import HBS from "../assets/images/projects/hbs.png";
+import TweepyBot from "../assets/images/projects/twitter-bot.png";
 
 export const projects = [
     {
@@ -26,7 +28,7 @@ export const projects = [
             { icon: SiHtml5, name: "HTML5" },
             { icon: SiCss3, name: "CSS3" }
         ],
-        image: "https://via.placeholder.com/300",
+        image: HBS,
         link: "N/A",
         github: "https://github.com/ephym6/hostel-booking-system.git"
     },
@@ -49,7 +51,7 @@ export const projects = [
         tech: [
             { icon: SiPython, name: "Python", libraries: ["tweepy", "tkinter", "dotenv", "os"] }
         ],
-        image: "https://via.placeholder.com/300",
+        image: TweepyBot,
         link: "",
         github: "https://github.com/ephym6/twitter-bot.git"
     },
