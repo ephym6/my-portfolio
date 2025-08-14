@@ -10,3 +10,7 @@
   --color-lightBlue: #90E0EF;
   --color-paleBlue: #CAF0F8;
 }
+
+html {
+  scroll-behavior: smooth;
+}
