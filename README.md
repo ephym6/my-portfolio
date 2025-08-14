@@ -13,7 +13,7 @@ It showcases my skills, projects, and ways to contact me — all in an elegant, 
 
 ## 🌐 Live Demo
 
-🔗 **[View Portfolio]()**
+🔗 **[View Portfolio](https://ephy-macharia.vercel.app/)**
 
 ## ✨ Features
 
