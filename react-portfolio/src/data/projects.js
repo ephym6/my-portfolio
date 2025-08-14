@@ -3,11 +3,15 @@ import {SiJavascript, SiSpringboot, SiHtml5, SiCss3, SiReact, SiVite, SiTailwind
 
 export const projects = [
     {
-        title: "Portfolio Website",
-        description: "A personal portfolio website to showcase my projects and skills.",
-        tech: ["React", "Tailwind CSS"],
+        title: "My Portfolio Website",
+        description: "My personal portfolio website to showcase my projects and skills.",
+        tech: [
+            { icon: SiReact, name: "React", libraries: ["react-icons"] },
+            { icon: SiVite, name: "Vite" },
+            { icon: SiTailwindcss, name: "Tailwind CSS", libraries: ["daisyui"]},
+        ],
         image: "https://via.placeholder.com/300",
-        link: "https://myportfolio.com",
+        link: "",
         github: ""
     },
     {
