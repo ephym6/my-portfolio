@@ -1,6 +1,8 @@
 // My projects
 import {SiJavascript, SiSpringboot, SiHtml5, SiCss3, SiReact, SiVite, SiTailwindcss, SiPython} from "react-icons/si";
 import MyPortfolio from "../assets/images/projects/my-portfolio.png";
+import VCN from "../assets/images/projects/vcn.png";
+import F4 from "../assets/images/projects/f4.png";
 
 export const projects = [
     {
@@ -37,7 +39,7 @@ export const projects = [
             { icon: SiTailwindcss, name: "Tailwind CSS" },
             { icon: "", name: "HeroUI" }
         ],
-        image: "https://via.placeholder.com/300",
+        image: VCN,
         link: "https://vibe-culture-tau.vercel.app/",
         github: ""
     },
@@ -60,7 +62,7 @@ export const projects = [
             { icon: SiTailwindcss, name: "Tailwind CSS" },
             { icon: SiHtml5, name: "HTML5", libraries: ["html5 audio api"] },
         ],
-        image: "https://via.placeholder.com/300",
+        image: F4,
         link: "https://fantastic-four.vercel.app/",
         github: "https://github.com/ephym6/fantastic-four.git"
     }
