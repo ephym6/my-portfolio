@@ -40,7 +40,7 @@ export default function Footer() {
                 </svg>
                 {/* Email */}
                 <a
-                    href="mailto:your.email@example.com"
+                    href="mailto:ephy.macharia.mbuu@gmail.com"
                     className="hover:text-primary"
                     aria-label="Email"
                 >
@@ -51,7 +51,7 @@ export default function Footer() {
 
                 {/* GitHub */}
                 <a
-                    href="https://github.com/yourusername"
+                    href="https://github.com/ephym6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primary"
@@ -64,7 +64,7 @@ export default function Footer() {
 
                 {/* LinkedIn */}
                 <a
-                    href="https://linkedin.com/in/yourprofile"
+                    href="https://linkedin.com/in/ephy-macharia-a1328430b"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primary"

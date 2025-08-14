@@ -28,27 +28,27 @@ export default function About() {
                         <div className="flex flex-col gap-3 mt-4">
 
                             {/* Email */}
-                            <a href="mailto:your.email@example.com" className="flex items-center gap-3 hover:text-primary">
+                            <a href="mailto:ephy.macharia.mbuu@gmail.com" className="flex items-center gap-3 hover:text-primary">
                                 <i className="fas fa-envelope text-lg"></i>
-                                your.email@example.com
+                                ephy.macharia.mbuu@gmail.com
                             </a>
 
                             {/* GitHub */}
-                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
+                            <a href="https://github.com/ephym6" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
                                 <i className="fab fa-github text-lg"></i>
-                                github.com/yourusername
+                                github.com/ephym6
                             </a>
 
                             {/* LinkedIn */}
-                            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
+                            <a href="https://linkedin.com/in/ephy-macharia-a1328430b" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
                                 <i className="fab fa-linkedin text-lg"></i>
-                                linkedin.com/in/yourprofile
+                                linkedin.com/in/ephy-macharia-a1328430b
                             </a>
 
                             {/* WhatsApp */}
-                            <a href="https://wa.me/254712345678" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
+                            <a href="https://wa.me/254745040804" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
                                 <i className="fab fa-whatsapp text-lg"></i>
-                                +254 712 345 678
+                                +254 745 040 804
                             </a>
 
                         </div>
