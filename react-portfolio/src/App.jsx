@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Projects from "./components/Projects.jsx";
 import About from "./components/About.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Hero />
             <Projects />
             <About />
+            <Footer />
         </div>
     )
 }
