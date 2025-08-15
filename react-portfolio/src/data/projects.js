@@ -8,7 +8,7 @@ import {
     SiVite,
     SiTailwindcss,
     SiPython,
-    SiMysql, SiNpm, SiGooglesheets
+    SiMysql, SiNpm, SiGooglesheets, SiVercel, SiIntellijidea
 } from "react-icons/si";
 import MyPortfolio from "../assets/images/projects/my-portfolio.png";
 import VCN from "../assets/images/projects/vcn.png";
@@ -25,6 +25,10 @@ export const projects = [
             { icon: SiReact, name: "React", libraries: ["react-icons"] },
             { icon: SiVite, name: "Vite" },
             { icon: SiTailwindcss, name: "Tailwind CSS", libraries: ["daisyui"]},
+            { icon: SiJavascript, name: "JavaScript" },
+            { icon: SiIntellijidea, name: "IntelliJ IDEA"},
+            { icon: SiNpm, name: "NPM"},
+            { icon: SiVercel, name: "Vercel"},
         ],
         image: MyPortfolio,
         link: "",
@@ -39,6 +43,8 @@ export const projects = [
             { icon: SiReact, name: "React", },
             { icon: SiVite, name: "Vite" },
             { icon: SiTailwindcss, name: "Tailwind CSS" },
+            { icon: SiJavascript, name: "JavaScript" },
+            { icon: SiIntellijidea, name: "IntelliJ IDEA"},
             { icon: SiNpm, name: "NPM" },
         ],
         image: YouthMerch,
@@ -53,7 +59,8 @@ export const projects = [
             { icon: SiMysql, name: "MySQL"},
             { icon: SiJavascript, name: "JavaScript" },
             { icon: SiHtml5, name: "HTML5" },
-            { icon: SiCss3, name: "CSS3" }
+            { icon: SiCss3, name: "CSS3" },
+            { icon: SiIntellijidea, name: "IntelliJ IDEA"}
         ],
         image: HBS,
         link: "N/A",
@@ -66,6 +73,9 @@ export const projects = [
             { icon: SiReact, name: "React", libraries: ["heroui"] },
             { icon: SiVite, name: "Vite" },
             { icon: SiTailwindcss, name: "Tailwind CSS" },
+            { icon: SiIntellijidea, name: "IntelliJ IDEA"},
+            { icon: SiNpm, name: "NPM"},
+            { icon: SiVercel, name: "Vercel"},
         ],
         image: VCN,
         link: "https://vibe-culture-tau.vercel.app/",
@@ -75,7 +85,8 @@ export const projects = [
         title: "Twitter Bot",
         description: "A Twitter bot that automates posting and interacting with tweets based on specific keywords",
         tech: [
-            { icon: SiPython, name: "Python", libraries: ["tweepy", "tkinter", "dotenv", "os"] }
+            { icon: SiPython, name: "Python", libraries: ["tweepy", "tkinter", "dotenv", "os"] },
+            { icon: SiIntellijidea, name: "IntelliJ IDEA"}
         ],
         image: TweepyBot,
         link: "",
@@ -89,6 +100,9 @@ export const projects = [
             { icon: SiVite, name: "Vite" },
             { icon: SiTailwindcss, name: "Tailwind CSS" },
             { icon: SiHtml5, name: "HTML5", libraries: ["html5 audio api"] },
+            { icon: SiIntellijidea, name: "IntelliJ IDEA"},
+            { icon: SiNpm, name: "NPM"},
+            { icon: SiVercel, name: "Vercel"}
         ],
         image: F4,
         link: "https://fantastic-four.vercel.app/",
