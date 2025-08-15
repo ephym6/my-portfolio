@@ -8,13 +8,14 @@ import {
     SiVite,
     SiTailwindcss,
     SiPython,
-    SiMysql
+    SiMysql, SiNpm, SiGooglesheets
 } from "react-icons/si";
 import MyPortfolio from "../assets/images/projects/my-portfolio.png";
 import VCN from "../assets/images/projects/vcn.png";
 import F4 from "../assets/images/projects/f4.png";
 import HBS from "../assets/images/projects/hbs.png";
 import TweepyBot from "../assets/images/projects/twitter-bot.png";
+import YouthMerch from "../assets/images/projects/youth-merch.png";
 
 export const projects = [
     {
@@ -26,6 +27,21 @@ export const projects = [
             { icon: SiTailwindcss, name: "Tailwind CSS", libraries: ["daisyui"]},
         ],
         image: MyPortfolio,
+        link: "",
+        github: ""
+    },
+    {
+        title: "Youth Merch Shop",
+        description: "A youth Merch Shop for showcasing and selling youth-oriented merchandise, featuring a modern design and user-friendly interface.",
+        tech: [
+            { icon: SiSpringboot, name: "Spring Boot" },
+            { icon: SiGooglesheets, name: "Google Sheets" },
+            { icon: SiReact, name: "React", },
+            { icon: SiVite, name: "Vite" },
+            { icon: SiTailwindcss, name: "Tailwind CSS" },
+            { icon: SiNpm, name: "NPM" },
+        ],
+        image: YouthMerch,
         link: "",
         github: ""
     },
