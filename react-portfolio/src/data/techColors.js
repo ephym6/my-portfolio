@@ -11,5 +11,5 @@ export const techColors = {
     NPM: "#CB3837",
     Vercel: "#000000",
     "Google Sheets": "#34A853",
-    "IntelliJ IDEA": "#000000",
+    "IntelliJ IDEA": "#9C326B",
 }
