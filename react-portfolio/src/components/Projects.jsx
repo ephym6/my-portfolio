@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { projects } from "../data/projects.js";
+import { techColors } from "../data/techColors.js";
 import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
@@ -55,6 +56,7 @@ export default function Projects() {
                                             const Icon = t.icon;
                                             const id = `${projectIndex}-${techIndex}`;
                                             const isActive = activeTech === id;
+                                            const glowColor = techColors[t.name] || "#000"; // default to black if not found
 
                                             return (
                                                 <div key={techIndex}
@@ -62,7 +64,22 @@ export default function Projects() {
                                                         onClick={() => handleTechClick(projectIndex, techIndex)}
                                                 >
                                                     {Icon && (
-                                                        <Icon className="w-6 h-6 text-cyan cursor-pointer hover:text-blue transition-colors duration-200" />
+                                                        <Icon
+                                                            className="w-6 h-6 text-cyan cursor-pointer hover:text-blue transition-colors duration-200"
+                                                            style={{
+                                                                color: glowColor,
+                                                                filter: isActive
+                                                                    ? `drop-shadow(0 0 8px ${glowColor})`
+                                                                    : "none",
+                                                            }}
+                                                            onMouseEnter={(e) => (
+                                                                e.currentTarget.style.filter = `drop-shadow(0 0 8px ${glowColor})`
+                                                            )}
+                                                            onMouseLeave={(e) =>
+                                                                !isActive && (
+                                                                e.currentTarget.style.filter = "none"
+                                                            )}
+                                                        />
                                                     )}
                                                     {/* Tooltip */}
                                                     <span
