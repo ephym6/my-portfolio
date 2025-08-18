@@ -1,0 +1,15 @@
+export const techColors = {
+    React: "#61DBFB",
+    Vite: "#646CFF",
+    "Tailwind CSS": "#38BDF8",
+    JavaScript: "#F7DF1E",
+    "Spring Boot": "#6DB33F",
+    Python: "#3776AB",
+    MySQL: "#4479A1",
+    HTML5: "#E34F26",
+    CSS3: "#1572B6",
+    NPM: "#CB3837",
+    Vercel: "#000000",
+    "Google Sheets": "#34A853",
+    "IntelliJ IDEA": "#000000",
+}
