@@ -1,3 +1,5 @@
+import {FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp} from "react-icons/fa";
+
 export default function About() {
     return (
         <section id="about-contact" className="py-10 bg-base-200">
@@ -29,25 +31,25 @@ export default function About() {
 
                             {/* Email */}
                             <a href="mailto:ephy.macharia.mbuu@gmail.com" className="flex items-center gap-3 hover:text-primary">
-                                <i className="fas fa-envelope text-lg"></i>
+                                <FaEnvelope className="text-lg"/>
                                 Email
                             </a>
 
                             {/* GitHub */}
                             <a href="https://github.com/ephym6" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
-                                <i className="fab fa-github text-lg"></i>
+                                <FaGithub className="text-lg" />
                                 GitHub
                             </a>
 
                             {/* LinkedIn */}
                             <a href="https://linkedin.com/in/ephy-macharia-a1328430b" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
-                                <i className="fab fa-linkedin text-lg"></i>
+                                <FaLinkedin className="text-lg" />
                                 LinkedIn
                             </a>
 
                             {/* WhatsApp */}
                             <a href="https://wa.me/254745040804" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
-                                <i className="fab fa-whatsapp text-lg"></i>
+                                <FaWhatsapp className="text-lg" />
                                 WhatsApp
                             </a>
 
