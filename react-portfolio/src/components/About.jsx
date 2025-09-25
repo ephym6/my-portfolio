@@ -30,25 +30,25 @@ export default function About() {
                             {/* Email */}
                             <a href="mailto:ephy.macharia.mbuu@gmail.com" className="flex items-center gap-3 hover:text-primary">
                                 <i className="fas fa-envelope text-lg"></i>
-                                ephy.macharia.mbuu@gmail.com
+                                Email
                             </a>
 
                             {/* GitHub */}
                             <a href="https://github.com/ephym6" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
                                 <i className="fab fa-github text-lg"></i>
-                                github.com/ephym6
+                                GitHub
                             </a>
 
                             {/* LinkedIn */}
                             <a href="https://linkedin.com/in/ephy-macharia-a1328430b" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
                                 <i className="fab fa-linkedin text-lg"></i>
-                                linkedin.com/in/ephy-macharia-a1328430b
+                                LinkedIn
                             </a>
 
                             {/* WhatsApp */}
                             <a href="https://wa.me/254745040804" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary">
                                 <i className="fab fa-whatsapp text-lg"></i>
-                                +254 745 040 804
+                                WhatsApp
                             </a>
 
                         </div>
