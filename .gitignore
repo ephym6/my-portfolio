@@ -35,5 +35,9 @@ Thumbs.db
 *.tmp
 *.swp
 
-# Personal notes
-plantid.md
+# Project write-ups used as source material for the site (kept local)
+/*.md
+!/README.md
+
+# Project notes and source material for the site (not published)
+notes/

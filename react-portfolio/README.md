@@ -1,12 +1,50 @@
-# React + Vite
+# react-portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The source of [ephy-macharia.vercel.app](https://ephy-macharia.vercel.app/).
 
-Currently, two official plugins are available:
+## Scripts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| Command           | What it does                              |
+| ----------------- | ----------------------------------------- |
+| `npm run dev`     | Start the dev server with hot reload      |
+| `npm run build`   | Build the production site into `dist/`    |
+| `npm run preview` | Serve the production build locally        |
+| `npm run lint`    | Check the code with ESLint                |
 
-## Expanding the ESLint configuration
+## Where things live
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+  data/
+    profile.js        name, email, social links, CV path
+    projects.js       every project on the site
+    caseStudies/      long-form project pages (/projects/<slug>)
+    experience.js     experience and education
+    skills.js         skill groups
+    techColors.js     brand colours for tech logos
+  sections/           home page sections (Hero, Work, Experience, About, Contact)
+  pages/              Home, CaseStudy, NotFound
+  components/         Header, Footer, theme toggle and shared UI
+  index.css           colour and type tokens (light and dark)
+public/
+  Ephy-Macharia-CV.pdf
+  og-image.png        social preview image
+  favicon.svg
+vercel.json           sends every route to index.html so /projects/... links work
+```
+
+## Common changes
+
+**Update the CV:** replace `public/Ephy-Macharia-CV.pdf` with the new file, keeping
+the same name, then commit and push. Every "Download CV" button uses that path.
+
+**Add a project:** add an entry to `src/data/projects.js`, with its screenshot in
+`src/assets/images/projects/`. Use `group: "main"` for the Selected work list or
+`group: "other"` for the shorter list.
+
+**Add a case study:** set `caseStudy: true` on the project, write the page body in
+`src/data/caseStudies/<slug>.jsx` using the `Section` and `Table` components, and
+register it in `src/data/caseStudies/index.js`.
+
+**Change colours:** edit the variables at the top of `src/index.css`. Light and dark
+themes each have their own block.

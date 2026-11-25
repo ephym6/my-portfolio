@@ -1,37 +1,48 @@
 <!doctype html>
-<html lang="en" data-theme="sunset">
+<html lang="en">
   <head>
-    <!-- Basic Page Needs -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ephy Macharia's Portfolio — Showcasing my projects, skills, and tech stack." />
-    <meta name="keywords" content="Ephy Macharia, Portfolio, React, Web Developer, Projects" />
-    <meta name="author" content="Ephy Macharia" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/code-icon.svg" />
-
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <title>Ephy Macharia | Software Engineer</title>
+    <meta
+      name="description"
+      content="Ephy Macharia is a software engineer and Computer Science student in Nairobi, building full-stack web apps and machine-learning systems."
     />
+    <meta name="author" content="Ephy Macharia" />
+    <link rel="canonical" href="https://ephy-macharia.vercel.app/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <!-- Title -->
-    <title>Ephy Macharia | Portfolio</title>
-
-    <!-- Open Graph (for social media previews) -->
-    <meta property="og:title" content="Ephy Macharia | Portfolio" />
-    <meta property="og:description" content="A showcase of my projects, skills, and journey as a developer." />
-    <meta property="og:image" content="/preview-image.png" />
+    <!-- Social previews -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://my-portfolio-link.com" />
+    <meta property="og:site_name" content="Ephy Macharia" />
+    <meta property="og:title" content="Ephy Macharia | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Full-stack web apps and machine-learning systems, from training the model to shipping the app around it."
+    />
+    <meta property="og:url" content="https://ephy-macharia.vercel.app/" />
+    <meta property="og:image" content="https://ephy-macharia.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#03045E" />
+    <meta name="theme-color" content="#f5f6f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121117" media="(prefers-color-scheme: dark)" />
 
+    <!-- Apply the saved or system colour theme before first paint -->
+    <script>
+      (function () {
+        var theme;
+        try { theme = localStorage.getItem("theme"); } catch (e) {}
+        if (theme !== "light" && theme !== "dark") {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

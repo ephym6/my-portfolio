@@ -1,12 +1,97 @@
 @import "tailwindcss";
-@plugin "daisyui" {
-  themes: light --default, dark --prefersdark, cupcake, sunset, bumblebee, emerald, corporate, synthwave, retro, cyberpunk, valentine, halloween, garden, forest, aqua, lofi, pastel, fantasy, wireframe, black, luxury, dracula;
+@import "@fontsource-variable/schibsted-grotesk";
+
+/* Colour tokens. Components use the Tailwind names below (bg-paper, text-ink…),
+   so switching theme only swaps these variables. */
+:root {
+  --paper: #f5f6f7;
+  --surface: #ffffff;
+  --ink: #17161c;
+  --muted: #5d5a6a;
+  --line: #dedde5;
+  --accent: #5b3cc4;      /* jacaranda */
+  --accent-ink: #ffffff;
+  --accent-soft: #ece8fa;
+  color-scheme: light;
 }
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, Poppins, sans-serif;
+:root[data-theme="dark"] {
+  --paper: #121117;
+  --surface: #1b1a22;
+  --ink: #edebf4;
+  --muted: #a3a0b3;
+  --line: #2f2d39;
+  --accent: #b4a3ff;
+  --accent-ink: #17132b;
+  --accent-soft: #241f3b;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: "Schibsted Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* The one orchestrated moment: the name rises into place on first load. */
+@keyframes rise {
+  from { transform: translateY(105%); }
+  to { transform: translateY(0); }
+}
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.name-line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.06em;
+}
+.name-line > span {
+  display: block;
+  animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+}
+.name-line:nth-child(2) > span {
+  animation-delay: 0.08s;
+}
+.hero-after {
+  animation: fade 0.8s ease-out 0.45s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .name-line > span,
+  .hero-after { animation: none; }
 }
